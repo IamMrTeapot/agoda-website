@@ -1,0 +1,18 @@
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    padding: 0px 16px;
+    color: black;
+    align-items: center;
+}
+
+.header_left {
+    display: flex;
+}
+
+.header_right {
+    display: flex;
+}
