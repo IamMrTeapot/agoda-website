@@ -32,10 +32,17 @@
 .topic_container li {
     float: left;
     margin-left: 32px;
+    cursor: pointer;
 }
 
 
 .flex {
     display: flex;
     align-items: center;
+}
+
+.icon_container {
+    margin-left: 16px;
+    margin-right: 16px;
+    cursor: pointer;
 }
