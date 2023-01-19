@@ -8,7 +8,7 @@ const Header = () => {
     <div className={style.header}>
       {/* Header left */}
       <div className={style.header_left}>
-        <Image src={img} alt="agoda logo" height={40} />
+        <Image src={img} alt="agoda logo" height={40} placeholder="blur" />
       </div>
       {/* Header right */}
       <div className={style.header_right}>right side</div>
