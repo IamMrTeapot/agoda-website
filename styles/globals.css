@@ -1,3 +1,32 @@
+@font-face {
+    font-family: "Mallory";
+    src: url('../public/fonts/Mallory\ Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+    
+@font-face {
+    font-family: "Mallory";
+    src: url('../public/fonts/Mallory\ Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mallory";
+    src: url('../public/fonts/Mallory\ Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mallory";
+    src: url('../public/fonts/Mallory\ Medium.ttf');
+    font-weight: medium;
+    font-style: normal;
+}
+
+
 .fullPage {
     width: 100%;
     background-color: white;
