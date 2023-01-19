@@ -26,11 +26,12 @@
 
 .topic_container ul{
     list-style-type: none;
+    padding-inline-start: 22px;
 }
 
 .topic_container li {
     float: left;
-    margin-left: 20px;
+    margin-left: 32px;
 }
 
 
