@@ -49,9 +49,9 @@
 
 .icon_container {
     display: flex;
-    margin-left: 6px;
-    margin-right: 6px;
-    min-width: 54px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 46px;
     cursor: pointer;
     height: 100%;
     justify-content: center;
@@ -60,6 +60,6 @@
 
 .bars_hover {
     background-color: #87b3fb;
-    border-radius: 10px;
+    border-radius: 6px;
 
 }
