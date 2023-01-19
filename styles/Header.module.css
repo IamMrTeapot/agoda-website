@@ -15,6 +15,7 @@
 
 .header_right {
     display: flex;
+    height: 50px;
 }
 
 .topic_container {
@@ -35,14 +36,30 @@
     cursor: pointer;
 }
 
+.topic_container li:hover {
+    color: #539afa;
+}
+
 
 .flex {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .icon_container {
-    margin-left: 16px;
-    margin-right: 16px;
+    display: flex;
+    margin-left: 6px;
+    margin-right: 6px;
+    min-width: 54px;
     cursor: pointer;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bars_hover {
+    background-color: #87b3fb;
+    border-radius: 10px;
+
 }

@@ -4,8 +4,11 @@ import img from "@/public/agoda_logo_cropped.jpg";
 import img2 from "@/public/cart_icon.png";
 import img3 from "@/public/Bars.png";
 import img4 from "@/public/Bars_hover.png";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [barIconOver, setBarIconOver] = useState(false);
+
   return (
     // flexbox with justify content : space-between
     <div className={style.header}>
@@ -30,8 +33,23 @@ const Header = () => {
           <div className={style.icon_container}>
             <Image src={img2} alt="cart logo" width={24} placeholder="blur" />
           </div>
-          <div className={style.icon_container}>
-            <Image src={img3} alt="more icon" width={24} placeholder="blur" />
+          <div
+            className={`${style.icon_container} ${
+              barIconOver ? style.bars_hover : ""
+            }`}
+            onMouseOver={() => {
+              setBarIconOver(true);
+            }}
+            onMouseLeave={() => {
+              setBarIconOver(false);
+            }}
+          >
+            <Image
+              src={barIconOver ? img4 : img3}
+              alt="more icon"
+              width={24}
+              placeholder="blur"
+            />
           </div>
         </div>
       </div>
