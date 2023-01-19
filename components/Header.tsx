@@ -8,8 +8,19 @@ const Header = () => {
     <div className={style.header}>
       {/* Header left */}
       <div className={style.header_left}>
-        <Image src={img} alt="agoda logo" height={40} placeholder="blur" />
+        <div className={style.flex}>
+          <Image src={img} alt="agoda logo" height={40} placeholder="blur" />
+          <div className={`${style.topic_container}`}>
+            <ul>
+              <li>Flight + Hotel</li>
+              <li>Hotels & Homes</li>
+              <li>Flights</li>
+              <li>Coupons</li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       {/* Header right */}
       <div className={style.header_right}>right side</div>
     </div>

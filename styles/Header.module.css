@@ -16,3 +16,25 @@
 .header_right {
     display: flex;
 }
+
+.topic_container {
+    display: flex;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.topic_container ul{
+    list-style-type: none;
+}
+
+.topic_container li {
+    float: left;
+    margin-left: 20px;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
