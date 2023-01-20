@@ -13,8 +13,6 @@
 
 .contents_left {
     width: 279px;
-    background-color: aquamarine;
-    min-height: 100px;
     display: flex;
     flex-direction: column;
 }

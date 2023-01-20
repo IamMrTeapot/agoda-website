@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 12px;
+}
+
+.picture {
+    width: 263px;
+    height: 102px;
+}
+
+.image_container {
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px groove;
+    width: 263px;
+    height: 102px;
+    cursor: pointer;
+}
+
+.searchbox {
+    width: 218px;
+    height: 36px;
+    padding: 0%;
+    margin: 0%;
+    border: 1px solid;
+    border-radius: 18px;
+    border-color: #737373;
+    margin-top: 18px;
+    cursor: pointer;
+
+    padding-left: 45px;
+    color: #2a2a2e;
+    font-family: "Mallory Book";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    background-image: url("../public/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    background-size: 25px;
+
+}
