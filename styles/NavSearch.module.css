@@ -11,10 +11,11 @@
     width: 1100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .searchContainer {
-    width: 351px;
+    width: 311px;
     height: 45px;
     background-color: white;
     border-radius: 8px;
@@ -24,6 +25,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
+    border: 0px;
 
     background-image: url("../public/search_icon.png");
     background-repeat: no-repeat;
@@ -33,3 +35,100 @@
     cursor: pointer;
 }
 
+.checkIn_date {
+    width: 177px;
+    height: 48px;
+    background-color: white;
+    border-radius: 8px 0px 0px 8px;
+    overflow: hidden;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkIn_date img {
+    padding: 8px 13px 9px 13px;
+}
+
+.checkOut_date {
+    width: 177px;
+    height: 48px;
+    background-color: white;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkOut_date img {
+    padding: 8px 13px 9px 13px;
+}
+
+
+.room {
+    width: 230px;
+    height: 48px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.room img {
+    padding: 8px 13px 9px 13px;
+
+}
+
+.btn_search {
+    width: 130px;
+    height: 48px;
+    background-color: #5392F9;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+
+    font-family: "Mallory Book";
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn_search:hover {
+    background-color: #75a8f9;
+}
+
+.flex {
+    display: flex;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detail p{
+    margin: 0px;
+
+}
+
+.bold_font {
+    font-family: "Mallory";
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.light_font {
+    font-family: "Mallory";
+    font-size: 14px;
+    color: #999999;
+    font-weight: lighter;
+}
