@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Contents from "@/components/Contents";
 import Header from "@/components/Header";
 import NavSearch from "@/components/NavSearch";
 import { Inter } from "@next/font/google";
@@ -13,6 +14,7 @@ export default function Home() {
         <Header />
         <Banner />
         <NavSearch />
+        <Contents />
       </div>
     </>
   );

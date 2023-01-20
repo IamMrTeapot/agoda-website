@@ -1,0 +1,28 @@
+.contents_page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contents_container {
+    display: flex;
+    width: 1100px;
+    padding-top: 24px;
+
+}
+
+.contents_left {
+    width: 279px;
+    background-color: aquamarine;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents_right {
+    width: 837px;
+    background-color:bisque;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
