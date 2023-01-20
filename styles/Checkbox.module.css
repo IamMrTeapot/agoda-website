@@ -1,0 +1,33 @@
+.checkbox {
+    margin: 0px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+    background: white;
+    border: 1px #f0f0f0 solid;
+    border-radius: 2px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+
+.checkbox__hover {
+
+    border: 1px #8cb6fb solid;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-family: "Mallory";
+    font-weight: normal;
+    color: #5a5b5b;
+}
+
+.container:hover {
+    color: #8cb6fb;
+}
