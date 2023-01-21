@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import style from "@/styles/Budget.module.css";
 import Image from "next/image";
 import img from "@/public/budget_range.png";
+import RangeSlider from "./RangeSlider";
 
 const Budget = () => {
   //I made this state to change input focus mode ,
@@ -9,16 +10,21 @@ const Budget = () => {
   const [minIsClicked, setMinIsClicked] = useState(false);
   const [maxIsClicked, setMaxIsClicked] = useState(false);
 
-  const [minVal, setMinVal] = useState(0);
-  const [maxVal, setMaxVal] = useState(300000);
+  // const [minVal, setMinVal] = useState(0);
+  // const [maxVal, setMaxVal] = useState(300000);
+
+  const [value, setValue] = useState({ min: 0, max: 300000 });
 
   const setMaxValProperly = (number: number) => {
     if (number <= 300000 && number >= 0) {
-      if (number < minVal) {
+      if (number < value.min) {
         alert("Max price must be greater than min price");
         return;
       }
-      setMaxVal(number);
+      setValue({
+        min: value.min,
+        max: number,
+      });
     } else {
       alert("Invalid Value.");
     }
@@ -26,11 +32,14 @@ const Budget = () => {
 
   const setMinValProperly = (number: number) => {
     if (number <= 300000 && number >= 0) {
-      if (number > maxVal) {
+      if (number > value.max) {
         alert("Min price must be less than max price");
         return;
       }
-      setMinVal(number);
+      setValue({
+        min: number,
+        max: value.max,
+      });
     } else {
       alert("Invalid Value.");
     }
@@ -40,6 +49,16 @@ const Budget = () => {
     <div className={style.container}>
       <p>Your budget (per night)</p>
       <Image src={img} alt="Budget range" width={247} />
+      <div className={style.range_slider}>
+        <RangeSlider
+          min={0}
+          max={300000}
+          step={1}
+          value={value}
+          onChange={setValue}
+        />
+      </div>
+
       <div className={style.range}>
         <div className={style.range_box}>
           <span className={style.range__span}>฿</span>
@@ -47,7 +66,7 @@ const Budget = () => {
           <input
             type="text"
             className={`${style.range__box}`}
-            value={minVal}
+            value={value.min}
             onClick={() => setMinIsClicked(!minIsClicked)}
             onChange={(e) => {
               setMinValProperly(
@@ -63,7 +82,7 @@ const Budget = () => {
           <input
             type="text"
             className={`${style.range__box}`}
-            value={maxVal}
+            value={value.max}
             onClick={() => setMaxIsClicked(!maxIsClicked)}
             onChange={(e) => {
               setMaxValProperly(

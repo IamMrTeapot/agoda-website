@@ -10,7 +10,7 @@
 .range {
     display: flex;
     align-items: center;
-    margin-top: 8px;
+    margin-top: -18px;
     font-family: "Mallory";
     font-size: 10px;
     font-weight: normal;
@@ -74,4 +74,8 @@
     font-weight: normal;
     color: black;
 
+}
+
+.range_slider {
+    margin-top: -25px;
 }

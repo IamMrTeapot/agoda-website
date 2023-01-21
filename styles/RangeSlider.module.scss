@@ -1,0 +1,125 @@
+$thumb-size: 20px;
+
+@mixin track-styles {
+  appearance: none;
+  background: transparent;
+  border: transparent;
+}
+
+@mixin thumb-styles {
+  appearance: none;
+  pointer-events: all;
+  width: $thumb-size;
+  height: $thumb-size;
+  border-radius: 0px;
+  border: 0 none;
+  cursor: grab;
+  background-color: red;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+#root {
+  max-width: 500px;
+  padding: 12px;
+  margin: auto;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  //   margin: 40px calc(#{$thumb-size} / 2);
+  margin: 0px;
+  //   padding-top: 1.6rem;
+  padding: 0px;
+  height: calc(#{$thumb-size} + 1.6rem);
+}
+
+.input_wrapper {
+  //   width: calc(100% + #{$thumb-size});
+  width: 241px;
+  //   margin: 0 calc(#{$thumb-size} / -2);
+  //   margin: 0 calc(#{$thumb-size} / -2) 0 calc(#{$thumb-size} / 2);
+  //   margin-top: 0px;
+  //   margin-left: calc(#{$thumb-size} / -2);
+  //   margin-bottom: 0px;
+  //   margin-right: calc(#{$thumb-size} / 2);
+  margin: 0px;
+  position: absolute;
+  height: $thumb-size;
+}
+
+.control_wrapper {
+  width: 241px;
+  position: absolute;
+  height: $thumb-size;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  appearance: none;
+  height: 100%;
+  opacity: 0;
+  z-index: 3;
+  padding: 0;
+
+  &::-ms-track {
+    @include track-styles;
+  }
+
+  &::-moz-range-track {
+    @include track-styles;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    @include track-styles;
+  }
+
+  &::-ms-thumb {
+    @include thumb-styles;
+  }
+
+  &::-moz-range-thumb {
+    @include thumb-styles;
+  }
+
+  &::-webkit-slider-thumb {
+    @include thumb-styles;
+  }
+}
+
+.rail {
+  position: absolute;
+  width: 100%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  border-radius: 3px;
+  background: lightgrey;
+}
+
+.inner_rail {
+  position: absolute;
+  height: 100%;
+  background: #5392f9;
+}
+
+.control {
+  width: $thumb-size;
+  height: $thumb-size;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  box-sizing: border-box;
+  border: 3px #5392f9 solid;
+  top: 50%;
+  margin-left: calc(#{$thumb-size} / -2);
+  transform: translate3d(0, -50%, 0);
+  z-index: 2;
+}
