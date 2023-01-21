@@ -5,6 +5,10 @@
     color: #5A5B5B;
 }
 
+.container img {
+    margin-left: 12px;
+}
+
 
 
 .range {
@@ -45,6 +49,19 @@
     padding-right: 5px;
 }
 
+.range__wrapper input[type="text"] {
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.range__wrapper input[type="text"]:focus {
+
+    box-sizing: border-box;
+    border: 2px #75a8f9 solid;
+    border-radius: 2px;
+    outline: none;
+    
+}
 
 .range__box p {
     margin: 0px;
@@ -78,4 +95,5 @@
 
 .range_slider {
     margin-top: -25px;
+    margin-left: 12px;
 }

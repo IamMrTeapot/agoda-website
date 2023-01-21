@@ -48,7 +48,7 @@ const Budget = () => {
   return (
     <div className={style.container}>
       <p>Your budget (per night)</p>
-      <Image src={img} alt="Budget range" width={247} />
+      <Image src={img} alt="Budget range" width={241} />
       <div className={style.range_slider}>
         <RangeSlider
           min={0}
@@ -60,7 +60,7 @@ const Budget = () => {
       </div>
 
       <div className={style.range}>
-        <div className={style.range_box}>
+        <div className={style.range__wrapper}>
           <span className={style.range__span}>฿</span>
           <label className={style.range__label}>MIN</label>
           <input
@@ -76,7 +76,7 @@ const Budget = () => {
           />
         </div>
         <hr className={style.line} />
-        <div className={style.range_box}>
+        <div className={style.range__wrapper}>
           <span className={style.range__span}>฿</span>
           <label className={style.range__label}>MAX</label>
           <input

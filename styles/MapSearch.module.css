@@ -20,6 +20,7 @@
 }
 
 .searchbox {
+    box-sizing: border-box;
     width: 263px;
     height: 36px;
     padding: 0%;

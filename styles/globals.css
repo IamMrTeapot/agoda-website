@@ -48,17 +48,3 @@ input[type="checkbox"] {
     width: 1px;
 }
 
-
-input[type="text"] {
-    box-sizing: border-box;
-    border: 1px black solid;
-}
-
-input[type="text"]:focus {
-
-    box-sizing: border-box;
-    border: 2px #75a8f9 solid;
-    border-radius: 2px;
-    outline: none;
-    
-}
