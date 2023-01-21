@@ -36,10 +36,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
+    background-color: #f8f7f9;
 
-    background-image: url("../public/search_icon.png");
+    background-image: url("../public/search_icon2.png");
     background-repeat: no-repeat;
-    background-position: 14px center;
+    background-position: 10px center;
     background-size: 25px;
 
 }
