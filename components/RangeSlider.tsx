@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "@/styles/RangeSlider.module.scss";
 
 type rangeData = {
@@ -14,6 +14,10 @@ type RangeSliderProps = {
   onChange: Function;
 };
 
+// Most of this code I just copied from internet and change some css property
+// The main idea of the code is calculating the position and position it in style
+// ref : https://benhoneywill.com/building-a-range-slider-component-in-react/
+
 const RangeSlider = (props: RangeSliderProps) => {
   const {
     step: step,
@@ -23,10 +27,10 @@ const RangeSlider = (props: RangeSliderProps) => {
     onChange: onChange,
   } = props;
 
-  const [minValue, setMinValue] = React.useState(value ? value.min : min);
-  const [maxValue, setMaxValue] = React.useState(value ? value.max : max);
+  const [minValue, setMinValue] = useState(value ? value.min : min);
+  const [maxValue, setMaxValue] = useState(value ? value.max : max);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (value) {
       setMinValue(value.min);
       setMaxValue(value.max);

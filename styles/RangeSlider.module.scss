@@ -39,14 +39,7 @@ $thumb-size: 20px;
 }
 
 .input_wrapper {
-  //   width: calc(100% + #{$thumb-size});
   width: 241px;
-  //   margin: 0 calc(#{$thumb-size} / -2);
-  //   margin: 0 calc(#{$thumb-size} / -2) 0 calc(#{$thumb-size} / 2);
-  //   margin-top: 0px;
-  //   margin-left: calc(#{$thumb-size} / -2);
-  //   margin-bottom: 0px;
-  //   margin-right: calc(#{$thumb-size} / 2);
   margin: 0px;
   position: absolute;
   height: $thumb-size;
