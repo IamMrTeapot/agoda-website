@@ -8,6 +8,7 @@ const Filter = () => {
       <hr className={style.line} />
       <p className={style.topic}>Popular filters for Doha</p>
       <CheckBox />
+      <CheckBox />
     </div>
   );
 };
