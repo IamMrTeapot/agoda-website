@@ -12,6 +12,30 @@ const Budget = () => {
   const [minVal, setMinVal] = useState(0);
   const [maxVal, setMaxVal] = useState(300000);
 
+  const setMaxValProperly = (number: number) => {
+    if (number <= 300000 && number >= 0) {
+      if (number < minVal) {
+        alert("Max price must be greater than min price");
+        return;
+      }
+      setMaxVal(number);
+    } else {
+      alert("Invalid Value.");
+    }
+  };
+
+  const setMinValProperly = (number: number) => {
+    if (number <= 300000 && number >= 0) {
+      if (number > maxVal) {
+        alert("Min price must be less than max price");
+        return;
+      }
+      setMinVal(number);
+    } else {
+      alert("Invalid Value.");
+    }
+  };
+
   return (
     <div className={style.container}>
       <p>Your budget (per night)</p>
@@ -26,7 +50,9 @@ const Budget = () => {
             value={minVal}
             onClick={() => setMinIsClicked(!minIsClicked)}
             onChange={(e) => {
-              setMinVal(parseInt(e.target.value ? e.target.value : "0"));
+              setMinValProperly(
+                parseInt(e.target.value ? e.target.value : "0")
+              );
             }}
           />
         </div>
@@ -40,7 +66,9 @@ const Budget = () => {
             value={maxVal}
             onClick={() => setMaxIsClicked(!maxIsClicked)}
             onChange={(e) => {
-              setMaxVal(parseInt(e.target.value ? e.target.value : "0"));
+              setMaxValProperly(
+                parseInt(e.target.value ? e.target.value : "0")
+              );
             }}
           />
         </div>
