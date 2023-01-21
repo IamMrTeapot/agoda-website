@@ -3,6 +3,8 @@ type FiltersData = {
   filterSubtopics: string[];
 };
 
+export type { FiltersData };
+
 export const filters: FiltersData[] = [
   {
     filterName: "Popular filters fro Doha",

@@ -3,7 +3,13 @@ import style from "@/styles/Checkbox.module.css";
 import Image from "next/image";
 import checkImg from "@/public/checked.png";
 
-const CheckBox = () => {
+type CheckBoxProps = {
+  subtopic: string;
+};
+
+const CheckBox = (props: CheckBoxProps) => {
+  const subtopic = props.subtopic;
+
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -27,7 +33,7 @@ const CheckBox = () => {
       >
         {isChecked && <Image src={checkImg} alt="checked" width={16} />}
       </span>
-      Breakfast included
+      {subtopic}
     </label>
   );
 };
