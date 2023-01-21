@@ -31,7 +31,7 @@ const Header = () => {
       <div className={style.header_right}>
         <div className={style.flex}>
           <div className={style.icon_container}>
-            <Image src={img2} alt="cart logo" width={24} placeholder="blur" />
+            <Image src={img2} alt="cart logo" width={24} />
           </div>
           <div
             className={`${style.icon_container} ${
@@ -44,12 +44,7 @@ const Header = () => {
               setBarIconOver(false);
             }}
           >
-            <Image
-              src={barIconOver ? img4 : img3}
-              alt="more icon"
-              width={24}
-              placeholder="blur"
-            />
+            <Image src={barIconOver ? img4 : img3} alt="more icon" width={24} />
           </div>
         </div>
       </div>

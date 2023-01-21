@@ -1,0 +1,77 @@
+.container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #5A5B5B;
+}
+
+
+
+.range {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-family: "Mallory";
+    font-size: 10px;
+    font-weight: normal;
+
+}
+
+.range p {
+    margin: 0px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.line {
+    border-style: dashed;
+    width: 36px;
+    height: 0px;
+    border-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 36px;
+}
+
+.range__box {
+    border: 1px black solid;
+    width: 102px;
+    height: 25px;
+    display: inline-block;
+    margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+.range__box p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: "Mallory Book";
+    font-weight: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.range__label {
+    margin: 0px;
+    margin-bottom: 5px;
+    color: black;
+    display: block;
+}
+
+.range__span {
+    margin: 0px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    top: 39px;
+    font-size: 13px;
+    font-family: "Mallory Book";
+    font-weight: normal;
+    color: black;
+
+}
