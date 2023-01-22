@@ -5,6 +5,7 @@ import Budget from "./Budget";
 import Filter from "./Filter";
 import { filters } from "@/data/filters";
 import SortBar from "./SortBar";
+import HotelCard from "./HotelCard";
 
 const Contents = () => {
   return (
@@ -19,6 +20,7 @@ const Contents = () => {
         </div>
         <div className={style.contents_right}>
           <SortBar />
+          <HotelCard />
         </div>
       </div>
     </div>

@@ -1,0 +1,17 @@
+.container {
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: row wrap;
+
+    border: 1px #dddfe2 solid;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.images_wrapper {
+    height: 230px;
+}
+
