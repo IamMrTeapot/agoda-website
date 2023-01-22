@@ -6,6 +6,7 @@ import Filter from "./Filter";
 import { filters } from "@/data/filters";
 import SortBar from "./SortBar";
 import HotelCard from "./HotelCard";
+import { hotelData } from "@/data/hotelData";
 
 const Contents = () => {
   return (
@@ -20,7 +21,10 @@ const Contents = () => {
         </div>
         <div className={style.contents_right}>
           <SortBar />
-          <HotelCard />
+
+          {hotelData.map((eachHotel, index) => {
+            return <HotelCard key={index} data={eachHotel} />;
+          })}
         </div>
       </div>
     </div>
