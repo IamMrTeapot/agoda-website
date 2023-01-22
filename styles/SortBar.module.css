@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 44px;
+    background-color: white;
+    border: 1px #dddfe2 solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    font-family: "Mallory Book";
+    font-size: 14px;
+    font-weight: normal;
+    color: #2A2A2E;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.divider {
+    width: 1px;
+    margin: 7px 0px;
+    background-color: #dddfe2;
+}
+
+.topic ,.sort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.topic {
+    cursor: pointer; 
+}
+
+.topic__clicked {
+    color: white;
+    background-color: #5392f9;
+}
+
+.topic:hover {
+
+    color: #5392f9;
+
+}
+
+.topic__clicked:hover {
+    color: white;
+}
+
+
+.sort {
+    font-family: "Mallory";
+    font-size: 14px;
+    font-weight: normal;
+    color: #737373;
+    background-color: #F8F7F9;
+    flex-grow:0;
+    width: 60px;
+}
+
+.arrow,.arrow__hover,.arrow__onClicked {
+    margin: 0px 8px;
+}
+
+.arrow {
+    filter: invert(13%) sepia(9%) saturate(488%) hue-rotate(201deg) brightness(93%) contrast(88%);
+}
+
+.arrow__hover {
+    filter: invert(72%) sepia(42%) saturate(6193%) hue-rotate(194deg) brightness(102%) contrast(96%);
+}
+
+.arrow__onClicked {
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(141deg) brightness(102%) contrast(102%);
+}
