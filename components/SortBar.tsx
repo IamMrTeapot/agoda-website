@@ -23,7 +23,13 @@ const SortBar = () => {
         className={`${style.topic} ${
           isBestMatchClicked ? style.topic__clicked : ""
         }`}
-        onClick={() => setIsBestMatchClicked(!isBestMatchClicked)}
+        onClick={() => {
+          setIsBestMatchClicked(!isBestMatchClicked);
+          setIsDistanceClicked(false);
+          setIsHotDealsClicked(false);
+          setIsLowestPriceClicked(false);
+          setIsTopReviewedClicked(false);
+        }}
       >
         Best match
       </div>
@@ -34,7 +40,13 @@ const SortBar = () => {
         }`}
         onMouseOver={() => setIsTopReviewedHovered(true)}
         onMouseLeave={() => setIsTopReviewedHovered(false)}
-        onClick={() => setIsTopReviewedClicked(!isTopReviewedClicked)}
+        onClick={() => {
+          setIsBestMatchClicked(false);
+          setIsDistanceClicked(false);
+          setIsHotDealsClicked(false);
+          setIsLowestPriceClicked(false);
+          setIsTopReviewedClicked(!isTopReviewedClicked);
+        }}
       >
         Top reviewed
         <svg
@@ -54,7 +66,13 @@ const SortBar = () => {
         className={`${style.topic} ${
           isLowestPriceClicked ? style.topic__clicked : ""
         }`}
-        onClick={() => setIsLowestPriceClicked(!isLowestPriceClicked)}
+        onClick={() => {
+          setIsBestMatchClicked(false);
+          setIsDistanceClicked(false);
+          setIsHotDealsClicked(false);
+          setIsLowestPriceClicked(!isLowestPriceClicked);
+          setIsTopReviewedClicked(false);
+        }}
       >
         Lowest price first
       </div>
@@ -65,7 +83,13 @@ const SortBar = () => {
         }`}
         onMouseOver={() => setIsDistanceHovered(true)}
         onMouseLeave={() => setIsDistanceHovered(false)}
-        onClick={() => setIsDistanceClicked(!isDistanceClicked)}
+        onClick={() => {
+          setIsBestMatchClicked(false);
+          setIsDistanceClicked(!isDistanceClicked);
+          setIsHotDealsClicked(false);
+          setIsLowestPriceClicked(false);
+          setIsTopReviewedClicked(false);
+        }}
       >
         Distance
         <svg
@@ -85,7 +109,13 @@ const SortBar = () => {
         className={`${style.topic} ${
           isHotDealsClicked ? style.topic__clicked : ""
         }`}
-        onClick={() => setIsHotDealsClicked(!isHotDealsClicked)}
+        onClick={() => {
+          setIsBestMatchClicked(false);
+          setIsDistanceClicked(false);
+          setIsHotDealsClicked(!isHotDealsClicked);
+          setIsLowestPriceClicked(false);
+          setIsTopReviewedClicked(false);
+        }}
       >
         Hot Deals!
       </div>
