@@ -8,7 +8,7 @@ const SortBar = () => {
   const [isDistanceHovered, setIsDistanceHovered] = useState<boolean>(false);
 
   // handle onClicked
-  const [isBestMatchClicked, setIsBestMatchClicked] = useState<boolean>(false);
+  const [isBestMatchClicked, setIsBestMatchClicked] = useState<boolean>(true);
   const [isTopReviewedClicked, setIsTopReviewedClicked] =
     useState<boolean>(false);
   const [isLowestPriceClicked, setIsLowestPriceClicked] =
