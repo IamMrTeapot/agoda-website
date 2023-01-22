@@ -18,6 +18,7 @@ const Contents = () => {
 
   // !!!!! I only generated two hotel data from fetching , I made the rest in data folders
   // because writing json files in postman is so painful TT
+  // And also, I assume that you want me to sort data in frontend not in backend
   const FetchDataAndSort = async () => {
     const res = await axios.get(url);
     const data: HotelData[] = res.data;
