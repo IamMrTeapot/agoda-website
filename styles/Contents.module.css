@@ -19,7 +19,6 @@
 
 .contents_right {
     width: 837px;
-    background-color:bisque;
     min-height: 100px;
     display: flex;
     flex-direction: column;

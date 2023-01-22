@@ -9,9 +9,200 @@
     border-radius: 8px;
     overflow: hidden;
     background-color: white;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%);
+    transition: all .2s ease-in-out;
 }
 
+.container:hover {
+    box-shadow: 1px 3px 4px 1px rgb(0 0 0 / 30%);
+}
 .images_wrapper {
     height: 230px;
 }
 
+.content_wrapper {
+    flex-grow: 0;
+    flex-basis: 42%;
+    max-width: 42%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    border-right: 1px #dddfe2 solid;
+    padding: 8px 12px;
+
+    font-family: "Mallory Book";
+    font-weight: normal;
+    font-size: 12px;
+    
+}
+
+.hotel__name {
+    font-size: clamp(18px, 17.1795px + 0.25641vw, 20px);
+    line-height: clamp(21px, 19.7692px + 0.384615vw, 24px);
+    font-family: "Mallory";
+    font-weight: normal;
+    color: rgb(36, 38, 44);
+    margin-bottom: 4px;
+}
+
+.data__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+
+
+.stars {
+    display: flex;
+    margin-right: 6px;
+    height: 13px;
+}
+
+.location__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.location__icon {
+    margin-right: 4px;
+    height: 16px;
+}
+
+.location__text {
+    color: rgb(49, 112, 231);
+    border-bottom: 1px white solid;
+    margin-bottom: 2px;
+}
+
+.location__text:hover {
+    border-bottom: 1px rgb(49, 112, 231) solid;
+
+}
+
+.tags__wrapper {
+    display: flex;
+    flex-wrap: row;
+
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-width: 1px;
+    border-color: rgb(193, 203, 224);
+    border-radius: 2px;
+    border-style: solid;
+    align-items: center;
+    height: 22px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 0px 8px;
+    
+
+}
+
+.price_wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 12px 12px;
+}
+
+.rating_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.review_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating_text {
+    font-family: "Mallory Book";
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+.review_text {
+    font-family: "Mallory Book";
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    color: rgb(112, 112, 112);
+    margin:0px;
+    padding:0px;
+    text-align: right;
+}
+
+.rating {
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    background-color: #3e6cea;
+    border-radius: 50% 50% 50% 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Mallory Book";
+    font-weight: normal;
+    font-size: 14px;
+
+    margin-left: 8px;
+}
+
+.price_text {
+
+    font-family: "Mallory Book";
+    color: #737373;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.price_text span {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 4px;
+    color: #e12d2d;
+    font-family: "Mallory";
+    font-weight: normal;
+}
+
+.button {
+    padding:12px;
+    background-color: rgb(62,108,234);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px 1px;
+    transition: all 0.12s ease-in-out 0s;
+    font-family: "Mallory Book";
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+}
+
+.button:hover {
+    background-color:#7898f0;
+}
+
+.arrow {
+    fill: white;
+    margin-left: 6px;
+}
