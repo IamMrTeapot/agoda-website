@@ -56,7 +56,7 @@ export const hotelData: HotelData[] = [
   },
   {
     hotelName: "Axios Postman Club",
-    stars: "6",
+    stars: "10",
     location: "Rest API, Internet of thing",
     price: "15,000",
     tags: ["Free API", "No sponsored"],
